@@ -3,10 +3,10 @@ import React from 'react'
 
 interface CustomButtonProps{
     title: string
-    handlePress: event
+    handlePress: any
     containerStyles: string
-    textStyles: string
-    isLoading: boolean
+    textStyles?: string
+    isLoading?: boolean
 }
 
 const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoading }: CustomButtonProps) => {
@@ -17,7 +17,7 @@ const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoadi
      className={`bg-secondary rounded-xl min-h-[62px] justify-center items-center ${containerStyles} ${isLoading ? 'opacity-50' : ''}`}
      disabled={isLoading}>
     
-      <Text className={`text-primary font-psemibold text-lg ${textStyles}`}>{title}</Text>
+      <Text className={`text-primary font-psemibold text-md ${textStyles}`}>{title}</Text>
     </TouchableOpacity>
   )
 }

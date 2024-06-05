@@ -27,10 +27,10 @@ export default function App() {
               Discover Endless Possibilities with {' '}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
-            <Image 
+            {/* <Image 
             source={images.path}
             className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
-            resizeMode="contain"/>
+            resizeMode="contain"/> */}
           </View>
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
             Where creativity meets inovation: embark on a journey of limitless exploration with Aora
